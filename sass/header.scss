@@ -1,0 +1,184 @@
+$bp-largest: 81.25rem;  //1300//
+$bp-large: 56.25rem;  //900//
+$bp-700: 43.75rem;  //700//
+$bp-600: 37.5rem;  //600//
+
+
+
+
+
+
+
+.header{
+   
+    padding: 3rem;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://media.istockphoto.com/photos/aerial-over-north-carolina-central-university-in-the-spring-picture-id1323420737?b=1&k=20&m=1323420737&s=170667a&w=0&h=rYBFNoi7xqsO83MSJmrWeR2kLkD5S8zqAU9mV1mJNA8=);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+   
+    position: relative;
+}
+
+
+.logo{
+
+     
+    &-img{
+        @media only screen and (max-width: $bp-largest) {
+            height: 3.5rem;
+          }
+
+          @media only screen and (max-width: $bp-large) {
+             margin-top: 2rem;
+        }
+    }   
+}
+
+.both{
+    display: flex;  
+    align-items: center;
+    
+    justify-content: space-between;
+
+}
+
+
+.top{
+        
+     
+
+
+     &-lists{
+          
+        display: flex;
+
+        @media only screen and (max-width: $bp-large) {
+            position: absolute;
+            background: orangered;
+            height: 100vh;
+            text-align: left;
+            flex-direction: column;
+            margin-left: -9rem;
+             
+            width: 12.6rem;
+            
+            margin-top: -7rem;
+           }
+         
+
+        &-items{
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+            list-style: none;
+
+            @media only screen and (max-width: $bp-large) {
+                margin-bottom: 1.8rem;
+                margin-left: 0.5rem;
+                margin-top: 2rem;
+            }
+        }
+
+         
+
+        
+
+        
+
+        &-link{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition:  5s;
+            color: white;
+            
+            @media only screen and (max-width: $bp-largest) {
+                font-size:  1.2rem; 
+                }
+
+                 
+
+            &::after{
+                content: "";
+                width: 0;
+                height: 0.3rem;
+                background: #f44336;
+                display: block;
+                margin: auto;
+             }
+
+            &:hover::after{
+                width: 100%;
+            }
+
+
+            
+
+             
+        }
+
+
+
+    }
+ 
+    &-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        
+        text-align: center;
+        color: white;
+
+        &-head{
+            font-size: 2.5rem;
+           font-family: sans-serif;
+
+           @media only screen and (max-width: $bp-largest) {
+            font-size:  1.5rem; 
+            }
+           
+        }
+
+        &-para{
+            font-family: sans-serif;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem; 
+
+            @media only screen and (max-width: $bp-largest) {
+            font-size:  0.8rem; 
+            }
+         }
+
+        &-btn{
+            
+        text-decoration: none;
+        color: white;
+        border: 2rem;
+        border: 2px solid white;
+        padding: 0.8rem 3.4rem; 
+        font-size: 1.5rem;
+ 
+
+        &:hover{
+            background-color: orangered;
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            font-size:  0.8rem; 
+            }
+    
+        }
+     }
+
+
+    
+    
+    
+}
